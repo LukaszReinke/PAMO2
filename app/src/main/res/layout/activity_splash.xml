@@ -3,23 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/carb">
 
     <Button
         android:id="@+id/bmiButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz BMI" />
+        android:text="Oblicz BMI"
+        style="@style/AppTheme.Button" />
 
     <Button
         android:id="@+id/caloriesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz dzienne kalorie" />
+        android:text="Oblicz dzienne kalorie"
+        style="@style/AppTheme.Button" />
 
     <Button
         android:id="@+id/recipesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rekomendacje przepisów" />
+        android:text="Rekomendacje przepisów"
+        style="@style/AppTheme.Button" />
 </LinearLayout>

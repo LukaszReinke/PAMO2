@@ -6,20 +6,24 @@
     android:padding="16dp">
 
     <Button
-        android:id="@+id/bmiButton"
+        android:id="@+id/recipe1Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz BMI" />
+        android:text="Przepis 1"
+        style="@style/AppTheme.Button" />
 
     <Button
-        android:id="@+id/caloriesButton"
+        android:id="@+id/recipe2Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz dzienne kalorie" />
+        android:text="Przepis 2"
+        style="@style/AppTheme.Button" />
 
-    <Button
-        android:id="@+id/recipesButton"
+    <TextView
+        android:id="@+id/recipeDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rekomendacje przepisów" />
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
 </LinearLayout>

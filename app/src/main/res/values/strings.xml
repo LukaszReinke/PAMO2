@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">BMIcalculator</string>
+    <string name="app_name">BMI Calculator</string>
+    <string name="bmiButton">Oblicz BMI</string>
+    <string name="caloriesButton">Oblicz dzienne kalorie</string>
+    <string name="recipesButton">Rekomendacje przepisów</string>
 </resources>

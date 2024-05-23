@@ -1,13 +1,3 @@
-/*
- Łukasz Reinke
- S15037
- Aplikacja mobilna, która realizuje funkcjonalności kalkulatora BMI.
- Dodane następujące testy:
- Analizę statyczną stworzonego kodu. Wynik wyeksportowany do pliku index.html.
- Testy jednostkowe z JUnit.
- Testy Espresso.
-*/
-
 package com.example.bmicalculator;
 
 import android.content.Intent;
@@ -16,13 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     private Button bmiButton, caloriesButton, recipesButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
 
         bmiButton = findViewById(R.id.bmiButton);
         caloriesButton = findViewById(R.id.caloriesButton);
@@ -31,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         bmiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BmiActivity.class);
+                Intent intent = new Intent(SplashActivity.this, BmiActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         caloriesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CaloriesActivity.class);
+                Intent intent = new Intent(SplashActivity.this, CaloriesActivity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         recipesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RecipesActivity.class);
+                Intent intent = new Intent(SplashActivity.this, RecipesActivity.class);
                 startActivity(intent);
             }
         });
