@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/recipe1Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Przepis 1"
+        style="@style/AppTheme.Button" />
+
+    <Button
+        android:id="@+id/recipe2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Przepis 2"
+        style="@style/AppTheme.Button" />
+
+    <TextView
+        android:id="@+id/recipeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/shoppingListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista Zakupów"
+        style="@style/AppTheme.Button" />
+</LinearLayout>
